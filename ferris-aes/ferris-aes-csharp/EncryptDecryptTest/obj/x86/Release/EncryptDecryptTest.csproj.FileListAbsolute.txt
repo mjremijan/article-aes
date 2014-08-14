@@ -1,0 +1,9 @@
+C:\Users\mjr2958\AppData\Local\Temporary Projects\EncryptDecryptTest\bin\Release\EncryptDecryptTest.exe
+C:\Users\mjr2958\AppData\Local\Temporary Projects\EncryptDecryptTest\bin\Release\EncryptDecryptTest.pdb
+C:\Users\mjr2958\AppData\Local\Temporary Projects\EncryptDecryptTest\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\mjr2958\AppData\Local\Temporary Projects\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.exe
+C:\Users\mjr2958\AppData\Local\Temporary Projects\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.pdb
+C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\bin\Release\EncryptDecryptTest.pdb
+C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.pdb
+C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\bin\Release\EncryptDecryptTest.dll
+C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.dll
