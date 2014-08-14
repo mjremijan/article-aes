@@ -16,3 +16,4 @@ C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\Enc
 C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\obj\x86\Debug\EncryptDecryptTest.pdb
 C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\bin\Debug\EncryptDecryptTest.exe
 C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\bin\Debug\EncryptDecryptTest.pdb
+C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\obj\x86\Debug\EncryptDecryptTest.csprojResolveAssemblyReference.cache

@@ -18,9 +18,6 @@ import org.apache.commons.codec.binary.Base64;
 public class AesBase64Wrapper {
 
     private static String IV = "IV_VALUE_16_BYTE"; 
-    private static String TRANSFORMATION = "AES/CBC/PKCS5Padding";
-    private static String SECRET_KEY_FACTORY_ALGORITHM = "PBKDF2WithHmacSHA1";
-    private static String SECRET_KEY_FACTORY_SPEC = "AES";
     private static String PASSWORD = "PASSWORD_VALUE"; 
     private static String SALT = "SALT_VALUE"; 
 
@@ -51,20 +48,20 @@ public class AesBase64Wrapper {
     }
 
     private Cipher getCipher(int mode) throws Exception {
-        Cipher c = Cipher.getInstance(TRANSFORMATION);
+        Cipher c = Cipher.getInstance("AES/CBC/PKCS5Padding");
         byte[] iv = getBytes(IV);
         c.init(mode, generateKey(), new IvParameterSpec(iv));
         return c;
     }
 
     private Key generateKey() throws Exception {
-        SecretKeyFactory factory = SecretKeyFactory.getInstance(SECRET_KEY_FACTORY_ALGORITHM);
+        SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
         char[] password = PASSWORD.toCharArray();
         byte[] salt = getBytes(SALT);
 
         KeySpec spec = new PBEKeySpec(password, salt, 65536, 128);
         SecretKey tmp = factory.generateSecret(spec);
         byte[] encoded = tmp.getEncoded();
-        return new SecretKeySpec(encoded, SECRET_KEY_FACTORY_SPEC);
+        return new SecretKeySpec(encoded, "AES");
     }
 }

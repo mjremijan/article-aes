@@ -7,3 +7,7 @@ C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\bin\Release\Encry
 C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.pdb
 C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\bin\Release\EncryptDecryptTest.dll
 C:\Users\Michael\Desktop\EncryptDecryptTest\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.dll
+C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\bin\Release\EncryptDecryptTest.exe
+C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\bin\Release\EncryptDecryptTest.pdb
+C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.exe
+C:\Users\Michael\Documents\NetBeansProjects\Aes\ferris-aes\ferris-aes-csharp\EncryptDecryptTest\obj\x86\Release\EncryptDecryptTest.pdb

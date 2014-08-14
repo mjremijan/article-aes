@@ -8,28 +8,12 @@ namespace EncryptDecryptTest
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            string encryptMe;
-            string encrypted;
-            string decrypted;
-
-            encryptMe = "please encrypt me";
-            Console.WriteLine("encryptMe = " + encryptMe);
-
-            encrypted = AesBase64Wrapper.EncryptAndEncode(encryptMe);
-            Console.WriteLine("encypted: " + encrypted);
-
-            decrypted = AesBase64Wrapper.DecodeAndDecrypt(encrypted);
-            Console.WriteLine("decrypted: " + decrypted);
-
-            Console.WriteLine("press any key to exit....");
-            Console.ReadKey();
-        }
-
-
         class AesBase64Wrapper
         {
+            private static string IV = "IV_VALUE_16_BYTE";
+            private static string PASSWORD = "PASSWORD_VALUE";
+            private static string SALT = "SALT_VALUE";
+
             public static string EncryptAndEncode(string raw)
             {
                 using (var csp = new AesCryptoServiceProvider())
@@ -54,13 +38,6 @@ namespace EncryptDecryptTest
                 }
             }
 
-            private static string IV = "IV_VALUE_16_BYTE";
-            private static string TRANSFORMATION = "AES/CBC/PKCS5Padding";
-            private static string SECRET_KEY_FACTORY_ALGORITHM = "PBKDF2WithHmacSHA1";
-            private static string SECRET_KEY_FACTORY_SPEC = "AES";
-            private static string PASSWORD = "PASSWORD_VALUE";
-            private static string SALT = "SALT_VALUE";
-
             private static ICryptoTransform GetCryptoTransform(AesCryptoServiceProvider csp, bool encrypting)
             {
                 csp.Mode = CipherMode.CBC;
@@ -77,6 +54,25 @@ namespace EncryptDecryptTest
                 }
                 return csp.CreateDecryptor();
             }
+        }
+
+        static void Main(string[] args)
+        {
+            string encryptMe;
+            string encrypted;
+            string decrypted;
+
+            encryptMe = "please encrypt me";
+            Console.WriteLine("encryptMe = " + encryptMe);
+
+            encrypted = AesBase64Wrapper.EncryptAndEncode(encryptMe);
+            Console.WriteLine("encypted: " + encrypted);
+
+            decrypted = AesBase64Wrapper.DecodeAndDecrypt(encrypted);
+            Console.WriteLine("decrypted: " + decrypted);
+
+            Console.WriteLine("press any key to exit....");
+            Console.ReadKey();
         }
     }
 }
